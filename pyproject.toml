@@ -1,0 +1,16 @@
+[project]
+name = "uigen"
+version = "0.2.0"
+description = "Procedural UI sprite generator — PNG atlases + JSON for Unity/games"
+requires-python = ">=3.10"
+dependencies = ["pillow>=10.0"]
+
+[project.scripts]
+uigen = "uigen.cli:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["uigen*"]
